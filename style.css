@@ -328,20 +328,32 @@
 
 
 /*button*/
-.btn{
-  display: flex;
-  justify-content: center;
-  /* gap: 5px; */
-  margin-top: 10px;
-  margin-bottom: 20px;
-  text-align: center;
+.viewer {
+      font-size: 24px;
+      padding: 20px;
+      border: 2px solid #ccc;
+      width: 100%;
+      text-align: center;
+    }
+
+
+.viewer button {
+      padding: 10px 20px;
+      margin: 0 10px;
+      font-size: 16px;
+      cursor: pointer;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+.hidden {
+  display: none;
 }
 
-.butto{
-  width: 40px;
-  height: 40px;
-  background-color: skyblue;
-  border: 1px solid white;
-  font-weight: 800;
-  border-radius: 5px;
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
 }
